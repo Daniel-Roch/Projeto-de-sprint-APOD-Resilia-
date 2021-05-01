@@ -21,7 +21,7 @@ body{
     text-align: center;
     margin: 20px 20% 0 25%;
 }
-.geral-quadro p{
+.geral-quadro h2{
     color: white;
     font-size: 20px;
 }
@@ -53,6 +53,16 @@ body{
     height: 40px;
     width: 52px;
     border-radius: 50%;
+    transition: 0,50s;
+}
+.form-section #data-escolhida{
+    transition: 0,50s;
+}
+.form-section button:hover{
+    transform: scale(1.10);
+}
+.form-section #data-escolhida:hover{
+    transform: scale(1.10);
 }
 /*Parte Resultado (section-reposta)*/
 #section-reposta{
@@ -76,4 +86,10 @@ body{
     text-shadow: 2px 1px 3px rgb(255, 255, 255);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black
+}
+#section-reposta a{
+    color:white;
+}
+.video-assistir{
+    margin-top: 10px;
 }
