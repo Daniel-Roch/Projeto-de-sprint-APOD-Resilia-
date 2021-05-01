@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APOD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/icon-astronauta.jpg" >
+</head>
+<body>
+    <div class="geral-quadro">
+        <div class="titulo-explic invisivel">
+            <h1 class="titulo">APOD - Astronomy Picture of the Day </h1>
+            <p>A Nasa disponibiliza uma série de API's que fornecem acesso aos seus projetos e sistemas. A "Astronomy Picture of the
+                Day" (APOD) é uma API que fornece uma foto ou vídeo, diariamente, para que as pessoas consigam descobrir um pouco
+                mais sobre o espaço</p>
+            <p>Coloque uma data e vamos conhecer mais sobre o espaço?</p>
+        </div>
+        <section class="form-section">
+            <form class='form-data'>
+                <label for="data-escolhida">Escolha uma data:</label>
+                <input id="data-escolhida" type="date">
+                <button id="btn-enviar">Enviar</button>
+            </form>
+        </section>
+        <section id="section-reposta" class="invisivel-quadro">
+            <div id="reposta-data">
+                
+            </div>
+        </section>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>      
+<script src="main.js"></script>
+</body>
+</html>

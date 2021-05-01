@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: url(./img/astronauta.jpg) center no-repeat fixed;
+    background-size: cover;
+}
+/*Inicio da DIV - geral-quadro*/
+.geral-quadro{
+    font-family: "Space Mono script=latin rev=2";
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgb(2, 26, 236);
+}
+.geral-quadro .titulo-explic{
+    border: 3px solid rgb(51, 30, 235);
+    border-radius: 60px 30px;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 20% 0 25%;
+}
+.geral-quadro p{
+    color: white;
+    font-size: 20px;
+}
+.geral-quadro .titulo{
+    color:white;
+    font-size: 40px;
+}
+/*Parte do Formulario*/
+.geral-quadro .form-section{
+    margin: 30px 10% 0 30%;
+}
+.form-section form{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 51px 93px 93px 130px;
+    align-items: center;
+}
+.form-data label{
+    color: white;
+    font-size: 30px;
+}
+.form-data input{
+    border-radius: 10px;
+    text-align:end;
+}
+.form-data button{
+    margin-top: 5px;
+    height: 40px;
+    width: 52px;
+    border-radius: 50%;
+}
+/*Parte Resultado (section-reposta)*/
+#section-reposta{
+    border: 4px solid red;
+    border-radius: 20px 70px;
+    padding: 10px;
+    align-items: center;
+    font-family: "Space Mono script=latin rev=2";
+    font-style: italic;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgb(48, 68, 248);
+    margin: 220px 90px 90px 90px;
+}
+.invisivel-quadro{
+    display: none;
+}
+.titulo-result{
+    color:white;
+}
+#reposta-data p{
+    text-shadow: 2px 1px 3px rgb(255, 255, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:black
+}
