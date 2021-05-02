@@ -28,5 +28,9 @@ function addPag(result){
             $('body').css('background-image' , `url('./img/astronauta.jpg')`)
             $('#section-reposta').css('display', 'flex')
             $('#section-reposta').css('flex-direction', 'column') //flex-direction: column;
+            }else{
+                $('#reposta-data').append(`<img src="${result.url}" class="img-resultado" alt="${result.url}">`)
+                $('.img-resultado').css('margin-top', '5px')
+                $('.img-resultado').css('border-radius', '30px')
             }
 }
