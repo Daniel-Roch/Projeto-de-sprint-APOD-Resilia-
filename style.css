@@ -2,17 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
 }
 body{
     background: url(./img/astronauta.jpg) center no-repeat fixed;
     background-size: cover;
 }
 /*Inicio da DIV - geral-quadro*/
+@keyframes geral-quadro-animation {
+    0%{
+        transform:translateX(-400px); /*andar da esquerda pra direita*/
+        opacity: -1; /* ficar transparente e aparecer*/
+    }100%{
+        transform:translateX(0px);
+        opacity: 1; 
+    }
+}
+@keyframes data-butto-enviar {
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.2);
+    }100%{
+        transform: scale(1);
+    }
+}
 .geral-quadro{
     font-family: "Space Mono script=latin rev=2";
     font-style: italic;
     text-shadow: 2px 2px 4px rgb(2, 26, 236);
+    animation: geral-quadro-animation 0.8s ease-out forwards; /*animation - peguei o nome:geral-quadro-animation que gerei em cima, e coloquei quanto tempo dura (1s) e ease-out é no final */
 }
 .titulo-explic{
     background: url(./img/background\ result.jpg);
@@ -22,7 +40,7 @@ body{
     border-radius: 60px 30px;
     padding: 10px;
     text-align: center;
-    margin: 20px 20% 0 25%;
+    margin: 20px 25% 0 25%;
 }
 .geral-quadro h2{
     color: white;
@@ -62,16 +80,16 @@ body{
     transition: 0,50s;
 }
 .form-section button:hover{
-    transform: scale(1.10);
+    animation: data-butto-enviar 1s ease-out forwards;
 }
 .form-section #data-escolhida:hover{
-    transform: scale(1.10);
+    animation: data-butto-enviar 1s ease-out forwards;
 }
 /*Parte Resultado (section-reposta)*/
 #section-reposta{
     background: url(./img/background\ result.jpg);
-    border: 4px solid red;
-    border-radius: 20px 70px;
+    border: 2px solid rgb(5, 40, 92);
+    border-radius: 40px;
     padding: 10px;
     align-items: center;
     font-family: "Space Mono script=latin rev=2";
@@ -91,9 +109,15 @@ body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:black
 }
-#section-reposta a{
+#reposta-data #link-resultado{
     color:white;
+    text-decoration: none;
 }
 .video-assistir{
     margin-top: 10px;
+}
+.img-resultado{
+    transition: 2s;
+    margin-top: 5px;
+    border-radius: 30px;
 }

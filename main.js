@@ -19,7 +19,7 @@ function addPag(result){
             <br>
             <h2 class="p-resultado">${result.explanation}</h2>
             <br>
-            <a href="${result.url}">Click Aqui para visualizar a imagem melhor.</a>
+            <a id="link-resultado" href="${result.url}">Click Aqui para visualizar a imagem melhor.</a>
             <br>
             `)
             var youtube = result.url.substr(12,7) //Saber se na url tem escrito youtube.
@@ -30,7 +30,5 @@ function addPag(result){
             $('#section-reposta').css('flex-direction', 'column') //flex-direction: column;
             }else{
                 $('#reposta-data').append(`<img src="${result.url}" class="img-resultado" alt="${result.url}">`)
-                $('.img-resultado').css('margin-top', '5px')
-                $('.img-resultado').css('border-radius', '30px')
             }
 }
