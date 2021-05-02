@@ -34,7 +34,7 @@ body{
 }
 /*Parte do Formulario*/
 .geral-quadro .form-section{
-    margin: 30px 10% 0 30%;
+    margin: 5px 30% 0 30%;
 }
 .form-section form{
     display: flex;
