@@ -30,7 +30,7 @@ body{
     font-family: "Space Mono script=latin rev=2";
     font-style: italic;
     text-shadow: 2px 2px 4px rgb(2, 26, 236);
-    animation: geral-quadro-animation 0.8s ease-out forwards; /*animation - peguei o nome:geral-quadro-animation que gerei em cima, e coloquei quanto tempo dura (1s) e ease-out é no final */
+    animation: geral-quadro-animation 0.8s ease-in forwards; /*animation - peguei o nome:geral-quadro-animation que gerei em cima, e coloquei quanto tempo dura (1s) e ease é a forma que acontece */
 }
 .titulo-explic{
     background: url(./img/background\ result.jpg);
@@ -96,18 +96,13 @@ body{
     font-style: italic;
     text-align: center;
     text-shadow: 2px 2px 4px rgb(48, 68, 248);
-    margin: 150px 90px 90px 90px;
+    margin: 150px 90px 90px 90px;    
 }
 .invisivel-quadro{
     display: none;
 }
 .titulo-result{
     color:white;
-}
-#reposta-data p{
-    text-shadow: 2px 1px 3px rgb(255, 255, 255);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:black
 }
 #reposta-data #link-resultado{
     color:white;
@@ -120,4 +115,33 @@ body{
     transition: 2s;
     margin-top: 5px;
     border-radius: 30px;
+}
+/*Parte erro*/
+#mensagem-erro{
+    flex-direction: column;
+    align-items: center;
+    margin: 13% 30% 10px 30%;
+    background: url(./img/background\ result.jpg);
+    border: 2px solid rgb(5, 40, 92);
+    border-radius: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#mensagem-erro .mensagem-erro{
+    text-shadow: 2px 1px 3px rgb(51, 51, 51);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+}
+#mensagem-erro .button-erro{
+    margin-top: 5px;
+    height: 40px;
+    width: 100px;
+    border-radius: 50%;
+    transition: 0,50s;
+}
+.button-erro:hover{
+    animation: data-butto-enviar 1s ease-out forwards;
+}
+.invisivel-erro{
+    display: none;
 }
