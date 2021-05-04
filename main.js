@@ -1,12 +1,12 @@
 $('#btn-enviar').click(function(event){
     event.preventDefault()
     var valueData = $('#data-escolhida').val()
-    console.log(valueData)
     //agora fiz Ajax no site, onde no final coloco a data
     $.ajax({
         'url': `https://api.nasa.gov/planetary/apod?api_key=wvOmQJqdKJGo9dgb6TgpKXPGsSdffxLcov4TY0wu&date=${valueData}`,
         'success': function(result){
             addPagSuccess(result)
+
         },'error': function(error){
             $('#mensagem-erro').html(`<h1 class="mensagem-erro">Erro 404.</h1> 
             <br>
@@ -41,5 +41,9 @@ function addPagSuccess(result){
     $('#section-reposta').css('flex-direction', 'column') //flex-direction: column;
     }else{
         $('#reposta-data').append(`<img src="${result.url}" class="img-resultado" alt="${result.url}">`)
+    }
+    //Se existe copyright.
+    if(result.copyright != null){
+        $('#reposta-data').append(`<h1 class="titulo-result">@copyright: ${result.copyright}</h1>`)
     }
 }
