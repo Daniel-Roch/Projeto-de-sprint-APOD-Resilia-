@@ -3,7 +3,7 @@ $('#btn-enviar').click(function(event){
     var valueData = $('#data-escolhida').val()
     //agora fiz Ajax no site, onde no final coloco a data
     $.ajax({
-        'url': `https://api.nasa.gov/planetary/apod?api_key=wvOmQJqdKJGo9dgb6TgpKXPGsSdffxLcov4TY0wu&date=${valueData}`,
+        'url': `https://api.nasa.gov/planetary/apod?api_key=nfTkgOMutFHRBDuseKJBpMeqlFXcKuhPn51zZb0o&date=${valueData}`,
         'success': function(result){
             addPagSuccess(result)
 
